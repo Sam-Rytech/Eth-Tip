@@ -1,5 +1,5 @@
 "use client";
-import OwnerActions from "../components/OwnerActions";
+import OwnerActions from '../../components/OwnerActions';
 
 export default function AdminPage() {
   return (
