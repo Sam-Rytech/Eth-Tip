@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# **BaseSocialTipping** 💙💸  
+_A decentralized tipping platform for the Base ecosystem with ENS and Farcaster integration_  
 
-## Getting Started
+---
 
-First, run the development server:
+## **📖 Overview**  
+**BaseSocialTipping** is a decentralized application (dApp) built for the **Base mainnet** that allows users to **send crypto tips** to others using either:  
+- An Ethereum address  
+- An **ENS name**
+- A **Farcaster username**  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The platform automatically **resolves usernames and addresses** using **ENS** and the **Neynar API** (for Farcaster), ensuring a smooth tipping experience without requiring users to manually find wallet addresses.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## **✨ Features**
+- **Tip anyone on Base** — send tips to any wallet address, ENS name, or Farcaster handle.
+- **ENS Resolution** — supports `.base.eth` domains via Alchemy API.
+- **Farcaster Resolution** — supports `@username` lookup and address reverse lookup via Neynar API.
+- **Reverse Resolution** — if you enter an ENS name, it will display the linked Farcaster username (and vice versa).
+- **Interactive Profile Links** — ENS names open in **Etherscan**, Farcaster handles open in **Warpcast** in a new tab.
+- **On-Chain Storage of Tips** — smart contract records sender, recipient, amount, and optional message.
+- **Base Mainnet Ready** — optimized for low gas fees.
+- **Clean & Responsive UI** — built with **Next.js + Tailwind CSS**.
