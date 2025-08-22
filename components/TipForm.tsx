@@ -18,13 +18,25 @@ export default function TipForm() {
     try {
       const c = await getWriteContract()
       const value = ethers.parseEther(amount)
+
+      console.log('Sending tip:', {
+        to,
+        note,
+        handle,
+        publicTip,
+        value: amount,
+      })
+
       const tx = await c.sendTip(to, note, handle, publicTip, { value })
+      console.log('TX hash:', tx.hash)
+
       await tx.wait()
       setNote('')
       setAmount('')
-      alert('Tip sent!')
+      alert('✅ Tip sent!')
     } catch (e: any) {
-      alert(e?.shortMessage || e?.message || 'Failed')
+      console.error('Tip error:', e)
+      alert(e?.shortMessage || e?.reason || e?.message || 'Failed')
     } finally {
       setBusy(false)
     }

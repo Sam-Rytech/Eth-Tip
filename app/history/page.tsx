@@ -1,5 +1,5 @@
 'use client'
-import TipList from '../components/TipList'
+import TipList from '../../components/TipList'
 
 export default function HistoryPage() {
   return (

@@ -1,6 +1,6 @@
 'use client'
-import ProfileCard from '../components/ProfileCard'
-import TipList from '../components/TipList'
+import ProfileCard from '../../components/ProfileCard'
+import TipList from '../../components/TipList'
 
 export default function StatsPage() {
   return (
